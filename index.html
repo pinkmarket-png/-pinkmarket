@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PinkMarket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PinkMarket</h1>
+    <nav>
+      <a href="#products">Produits</a>
+      <a href="#cart">Panier</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Smartphones reconditionnés premium</h2>
+    <p>Design moderne inspiré des grandes boutiques e-commerce.</p>
+  </section>
+
+  <section id="products" class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Téléphone">
+      <h3>iPhone 13</h3>
+      <p>120€</p>
+      <button onclick="addToCart('iPhone 13',120)">Ajouter au panier</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Téléphone">
+      <h3>Samsung Galaxy S22</h3>
+      <p>150€</p>
+      <button onclick="addToCart('Samsung Galaxy S22',150)">Ajouter au panier</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/250" alt="Téléphone">
+      <h3>Xiaomi 13</h3>
+      <p>200€</p>
+      <button onclick="addToCart('Xiaomi 13',200)">Ajouter au panier</button>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Panier</h2>
+    <ul id="cart-items"></ul>
+    <p>Total : <span id="total">0</span>€</p>
+    <button class="pay-btn" onclick="checkout()">Payer maintenant</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
